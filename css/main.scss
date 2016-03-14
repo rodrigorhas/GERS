@@ -45,10 +45,9 @@ h5 {
   border: 0;
   display: inline-block;
   cursor: pointer; }
-
-.btn:hover, .btn:focus {
-  background-color: #dab10d;
-  color: #fff; }
+  .btn:hover, .btn:focus {
+    background-color: #dab10d;
+    color: #fff; }
 
 .lg-btn {
   background-color: #f1c40f;
@@ -60,10 +59,9 @@ h5 {
   display: inline-block;
   text-transform: uppercase;
   cursor: pointer; }
-
-.lg-btn:hover, .lg-btn:focus {
-  background-color: #dab10d;
-  color: #fff; }
+  .lg-btn:hover, .lg-btn:focus {
+    background-color: #dab10d;
+    color: #fff; }
 
 /*==============================================
 			      GENERAL STYLING
@@ -101,41 +99,37 @@ a:hover {
   line-height: 1.3;
   margin-bottom: 130px;
   font-weight: 300; }
-
-.heading h2 span {
-  color: #f1c40f;
-  text-transform: capitalize;
-  font-weight: 600; }
+  .heading h2 span {
+    color: #f1c40f;
+    text-transform: capitalize;
+    font-weight: 600; }
 
 /*==============================================
 			      	HOME
 ================================================*/
 #home {
   position: relative; }
-
-#home:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(16, 16, 16, 0.8);
-  top: 0;
-  left: 0;
-  right: 0; }
-
-#home:after {
-           /* 
-background: linear-gradient(-45deg, #f1c40f 16px, transparent 0), linear-gradient(45deg, #f1c40f 16px, transparent 0);
-background-position: left-bottom;
-background-repeat: repeat-x;
-background-size: 32px 32px;
-content: " ";
-display: block;
-position: absolute;
-bottom: 0px;
-left: 0px;
-width: 100%;
-height: 32px;  */ }
+  #home:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 16, 16, 0.8);
+    top: 0;
+    left: 0;
+    right: 0; }
+  #home:after {/* 
+    background: linear-gradient(-45deg, #f1c40f 16px, transparent 0), linear-gradient(45deg, #f1c40f 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;  */}
 
 .image-bg {
   background-image: url("http://noticias.ufsc.br/files/2012/10/palestra_abertura_semanaRI_2012.jpg");
@@ -149,130 +143,111 @@ height: 32px;  */ }
   display: block;
   padding: 30px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
-
-.header .logo {
-  float: left; }
-
-.header .logo img {
-  width: 150px; }
-
-.header .social-icons {
-  display: block;
-  float: right; }
-
-.header .social-icons ul li {
-  color: #fff;
-  display: inline-block;
-  text-align: center; }
-
-.header .social-icons ul li a {
-  display: block;
-  color: #101010;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
-  border-radius: 40px;
-  border: 1px solid transparent;
-  -webkit-transition: background 0.5s ease-in-out;
-  -moz-transition: background 0.5s ease-in-out;
-  -ms-transition: background 0.5s ease-in-out;
-  -o-transition: background 0.5s ease-in-out;
-  transition: background 0.5s ease-in-out;
-  width: 40px;
-  height: 40px;
-  margin: 0 5px;
-  line-height: 40px;
-  font-size: 20px;
-  background: #fff; }
-
-.header .social-icons ul li a:hover, .header .social-icons ul li a:active, .header .social-icons ul li a:focus {
-  background: #f1c40f; }
+  .header .logo {
+    float: left; }
+    .header .logo img {
+      width: 150px; }
+  .header .social-icons {
+    display: block;
+    float: right; }
+    .header .social-icons ul li {
+      color: #fff;
+      display: inline-block;
+      text-align: center; }
+      .header .social-icons ul li a {
+        display: block;
+        color: #101010;
+        -moz-border-radius: 40px;
+        -webkit-border-radius: 40px;
+        border-radius: 40px;
+        border: 1px solid transparent;
+        -webkit-transition: background 0.5s ease-in-out;
+        -moz-transition: background 0.5s ease-in-out;
+        -ms-transition: background 0.5s ease-in-out;
+        -o-transition: background 0.5s ease-in-out;
+        transition: background 0.5s ease-in-out;
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+        line-height: 40px;
+        font-size: 20px;
+        background: #fff; }
+        .header .social-icons ul li a:hover, .header .social-icons ul li a:active, .header .social-icons ul li a:focus {
+          background: #f1c40f; }
 
 @media only screen and (max-width: 768px) {
   .header .social-icons,
   .header .logo {
     float: none;
     text-align: center; }
-
   .header .logo img {
     margin: 0 auto;
     display: block;
     padding-bottom: 20px; } }
+
 /*==============================================
 			      INRO CONTENT
 ================================================*/
 .intro {
   padding: 125px 0;
   color: white; }
-
-.intro .countdown span {
-  color: #f1c40f;
-  font-weight: 600; }
-
-.intro .intro-heading .tlt {
-  font-family: 'Raleway', sans-serif;
-  text-transform: capitalize;
-  font-weight: 700;
-  padding: 5px 0 20px;
-  font-size: 55px; }
-
-.intro p.intro-texts {
-  color: rgba(255, 255, 255, 0.8);
-  letter-spacing: .5px; }
-
-.intro .subscribe {
-  position: relative;
-  margin: 50px 10px 0;
-  height: 42px;
-  padding: 0; }
-
-.intro .subscribe .form-control {
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 1px solid #fff;
-  color: #333;
-  box-shadow: none;
-  height: 40px;
-  font-weight: 400;
-  padding: 0 1.5em 0 2.2em; }
-
-.intro .subscribe .form-control:focus {
-  border-color: #fff;
-  outline: 0;
-  box-shadow: none; }
-
-.intro .subscribe #mc-form,
-.intro .subscribe #mc-form .btn-default {
-  height: 40px; }
-
-.intro .subscribe #mc-notification {
-  margin: 0.75em 0 0;
-  font-weight: 300;
-  color: #7d7d7d; }
-
-.intro .subscribe .error {
-  color: #f44336 !important; }
-
-.intro .subscribe .valid {
-  color: #f55e25 !important; }
-
-.intro .subscribe .error i,
-.intro .subscribe .valid i {
-  padding-right: .5em; }
-
-.intro .subscribe p.notify {
-  padding-top: 5px;
-  color: white;
-  font-style: italic; }
+  .intro .countdown span {
+    color: #f1c40f;
+    font-weight: 600; }
+  .intro .intro-heading .tlt {
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding: 5px 0 20px;
+    font-size: 55px; }
+  .intro p.intro-texts {
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: .5px; }
+  .intro .subscribe {
+    position: relative;
+    margin: 50px 10px 0;
+    height: 42px;
+    padding: 0; }
+    .intro .subscribe .form-control {
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid #fff;
+      color: #333;
+      box-shadow: none;
+      height: 40px;
+      font-weight: 400;
+      padding: 0 1.5em 0 2.2em; }
+    .intro .subscribe .form-control:focus {
+      border-color: #fff;
+      outline: 0;
+      box-shadow: none; }
+    .intro .subscribe #mc-form,
+    .intro .subscribe #mc-form .btn-default {
+      height: 40px; }
+    .intro .subscribe #mc-notification {
+      margin: 0.75em 0 0;
+      font-weight: 300;
+      color: #7d7d7d; }
+    .intro .subscribe .error {
+      color: #f44336 !important; }
+    .intro .subscribe .valid {
+      color: #f55e25 !important; }
+    .intro .subscribe .error i,
+    .intro .subscribe .valid i {
+      padding-right: .5em; }
+    .intro .subscribe p.notify {
+      padding-top: 5px;
+      color: white;
+      font-style: italic; }
 
 @media only screen and (max-width: 442px) {
   .intro {
     padding: 100px 0;
     text-align: center; }
+    .intro .countdown h4 {
+      font-size: 18px; }
+    .intro .intro-heading .tlt {
+      font-size: 45px; } }
 
-  .intro .countdown h4 {
-    font-size: 18px; }
-
-  .intro .intro-heading .tlt {
-    font-size: 45px; } }
 /*==============================================
 			      	ABOUT
 ================================================*/
@@ -280,47 +255,41 @@ height: 32px;  */ }
   position: relative;
   background: #f1c40f;
   padding: 80px 0; }
-
-.about h2 {
-  text-align: center;
-  color: #fff;
-  font-size: 40px;
-  font-weight: 600; }
-
-.about h2 small {
-  color: #101010; }
+  .about h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600; }
+    .about h2 small {
+      color: #101010; }
 
 /*==============================================
 			      	SERVICES
 ================================================*/
 .services {
   text-align: center; }
-
-.services .s-content {
-  text-align: center; }
-
-.services .s-content i {
-  font-size: 24px;
-  color: #f1c40f; }
-
-.services .s-content h4.s-heading {
-  text-transform: capitalize;
-  padding: 20px 0; }
-
-.services .s-content span {
-  display: block;
-  margin: 0 auto;
-  width: 70px;
-  height: 1px;
-  background: #f1c40f; }
-
-.services .s-content p.s-text {
-  padding-top: 20px;
-  letter-spacing: 1px; }
+  .services .s-content {
+    text-align: center; }
+    .services .s-content i {
+      font-size: 24px;
+      color: #f1c40f; }
+    .services .s-content h4.s-heading {
+      text-transform: capitalize;
+      padding: 20px 0; }
+    .services .s-content span {
+      display: block;
+      margin: 0 auto;
+      width: 70px;
+      height: 1px;
+      background: #f1c40f; }
+    .services .s-content p.s-text {
+      padding-top: 20px;
+      letter-spacing: 1px; }
 
 @media only screen and (max-width: 768px) {
   .services .padding60 {
     padding-bottom: 60px; } }
+
 /*==============================================
 			      	INVESTORS
 ================================================*/
@@ -330,18 +299,17 @@ height: 32px;  */ }
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-
-.investors .heading h2 {
-  color: #fff; }
-
-.investors .investors-logo img:hover, .investors .investors-logo img:focus {
-  opacity: 0.8; }
+  .investors .heading h2 {
+    color: #fff; }
+  .investors .investors-logo img:hover, .investors .investors-logo img:focus {
+    opacity: 0.8; }
 
 @media only screen and (max-width: 768px) {
   .investors-logo img {
     display: block;
     margin: 0 auto;
     width: 250px; } }
+
 /*==============================================
 			      	CONTACT
 ================================================*/
@@ -427,16 +395,14 @@ height: 32px;  */ }
   background: #101010;
   padding: 80px 0;
   text-align: center; }
-
-.footer img {
-  display: block;
-  width: 150px;
-  margin: 0 auto; }
-
-.footer p {
-  text-transform: capitalize;
-  padding-top: 20px;
-  color: #fff; }
+  .footer img {
+    display: block;
+    width: 150px;
+    margin: 0 auto; }
+  .footer p {
+    text-transform: capitalize;
+    padding-top: 20px;
+    color: #fff; }
 
 /*============================================= 
 				PRELOADER 
@@ -599,25 +565,30 @@ height: 32px;  */ }
 #colors li #orange {
   background: #ff9800; }
 
-#mc-form input {
-  display: inline-block;
-  border-radius: 0;
-  width: auto;
-  border: none;
-  border-bottom: 1px solid #f2f2f2;
-  background-color: transparent;
-  margin: 0 4px; }
+#mc-form {
+
+	& input {
+		display: inline-block;
+		border-radius: 0;
+		width: auto;
+		border: none;
+		border-bottom: 1px solid #f2f2f2;
+		background-color: transparent;
+		margin: 0 4px;
+	}
+}
 
 .intro-content {
-  margin-bottom: 60px; }
+	margin-bottom: 60px;
+}
 
 .intro-texts {
-  max-width: 920px;
-  margin: 0px auto !important; }
+	max-width: 920px;
+    margin: 0px auto !important;
+}
 
 .btn-md {
-  border-radius: 2px;
-  text-transform: uppercase;
-  padding: 8px 12px; }
-
-/*# sourceMappingURL=main.css.map */
+	border-radius: 2px;
+	text-transform: uppercase;
+	padding: 8px 12px;
+}
