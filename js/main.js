@@ -85,6 +85,12 @@ $(document).ready(function() {
 	  // set the type of token to animate (available types: 'char' and 'word')
 	  type: 'char'
 	});
+
+	// subscribe
+	$("#mc-form").on("submit", function (e) {
+		e.preventDefault();
+		console.log(form.serialize());
+	});
 	
 });
 

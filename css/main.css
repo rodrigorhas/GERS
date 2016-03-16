@@ -104,7 +104,6 @@ a:hover {
 
 .heading h2 span {
   color: #f1c40f;
-  text-transform: capitalize;
   font-weight: 600; }
 
 /*==============================================
@@ -606,7 +605,9 @@ height: 32px;  */ }
   border: none;
   border-bottom: 1px solid #f2f2f2;
   background-color: transparent;
-  margin: 0 4px; }
+  margin: 0 4px;
+  box-shadow: none;
+  color: white; }
 
 .intro-content {
   margin-bottom: 60px; }
@@ -618,6 +619,8 @@ height: 32px;  */ }
 .btn-md {
   border-radius: 2px;
   text-transform: uppercase;
-  padding: 8px 12px; }
+  padding: 7px 12px 6px;
+  vertical-align: middle;
+  font-size: 90%; }
 
 /*# sourceMappingURL=main.css.map */
