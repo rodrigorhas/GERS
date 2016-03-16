@@ -2,7 +2,7 @@
 
 	define("ROOT", __DIR__.'/..');
 
-	error_reporting(0);
+	//error_reporting(0);
 
 	$sess_name = session_name();
 
@@ -17,13 +17,9 @@
 			'password' => '',
 			'db' => 'gers'
 		),
-		'remember' => array(
-			'cookie_name' => 'hash',
+		'visitor' => array(
+			'cookie_name' => 'visitor',
 			'cookie_expiry' => 604800
-		),
-		'session' => array(
-			'session_name' => 'user',
-			'token_name' => 'token'
 		)
 	);
 
@@ -34,13 +30,9 @@
 	require_once ROOT.'/functions/sanitize.php';
 	require_once ROOT.'/functions/browser.php';
 
-	if(Cookie::exists(Config::get('remember/cookie_name')) && !Session::exists(Config::get('session/session_name'))) {
-		$hash = Cookie::get(Config::get('remember/cookie_name'));
-		$hashCheck = DB::getInstance()->get('user_sessions', array('hash', '=', $hash));
-
-		if($hashCheck->count()) {
-
-			$user = new User($hashCheck->first()->user_id);
-			$user->login();
-		}
+	if(Cookie::exists(Config::get('visitor/cookie_name'))) {
+		$hash = Cookie::get(Config::get('visitor/cookie_name'));
+	}else{
+		$hash = md5(uniqid());
+		Cookie::put(Config::get('visitor/cookie_name'), $hash, Config::get('visitor/cookie_expiry'));
 	}
