@@ -14,7 +14,7 @@
 		'mysql' => array(
 			'host' => '127.0.0.1',
 			'username' => 'root',
-			'password' => '',
+			'password' => '923885',
 			'db' => 'gers'
 		),
 		'visitor' => array(
