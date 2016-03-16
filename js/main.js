@@ -86,12 +86,6 @@ $(document).ready(function() {
 	  type: 'char'
 	});
 
-	// subscribe
-	$("#mc-form").on("submit", function (e) {
-		e.preventDefault();
-		console.log(form.serialize());
-	});
-	
 });
 
 
