@@ -79,15 +79,6 @@ class User {
 								'hash' => $hash
 						];
 
-
-						if($geo){
-                			$geoJson = json_decode($geo);
-                			//echo $geoJson->city;
-                			$location = $geoJson->city . ", " . $geoJson->region . ", " . $geoJson->country;
-							if($location)	$data["location"] = $location;
-							if($geoJson->city)	$data["city"] = $geoJson->city;
-						}
-
 						$browser = getBrowser();
 
 						//if($browser['name']) $data["browser"] = $browser['name'] . " " . $browser['version'];
@@ -104,8 +95,8 @@ class User {
 						}
 
 						Cookie::put($this->_cookieName, $hash, Config::get('remember/cookie_expiry'));
-					}
 
+					}
 					return true;
 				}
 			}

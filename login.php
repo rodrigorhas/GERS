@@ -106,12 +106,14 @@ if(Input::exists()){
                                   <input type="password" class="form-control" id="password" name="password" value="" required="" title="Digite sua senha">
                                   <span class="help-block"></span>
                               </div>
-                              <div id="loginErrorMsg" class="alert alert-danger"><?php 
+                              <div id="loginErrorMsg" class="alert alert-danger <?php echo (!$login_flag || !isset($validation)) ? 'hide' : '';?>"><?php 
                                 if($login_flag){
                                     echo "Dados de login incorretos";
                                 }
-                                foreach($validation->errors() as $error){
-                                    echo $error, "<br>";
+                                if(isset($validation)){
+                                    foreach($validation->errors() as $error){
+                                        echo $error, "<br>";
+                                    }
                                 }
                                 ?></div>
                               

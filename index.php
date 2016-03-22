@@ -1,37 +1,17 @@
 <?php
-require_once('core/init.php');
 
-if(Input::exists()){
-    echo "Input";
-    //if(Token::check(Input::get('token'))){
-        echo "Token";
-        $validate = new Validate();
-        $validation = $validate->check($_POST, array(
-            'username' => array('required' => true),
-            'password' => array('required' => true)
-        ));
+    error_reporting(0);
 
-        if($validation->passed()){
-            echo "validacao passed";
-            $user = new User();
+    define('ROOT', __DIR__);
+    require_once 'core/init.php';
 
-            $remember = (Input::get('remember') === 'on') ? true : false;
-            $login = $user->login(Input::get('username'), Input::get('password'), $remember);
+    $user = new User();
 
-            if($login){
-                Redirect::to('index.php?logado');
-            }else{
-                echo "erro login";
-                //Session::flash('login', 'Dados de autenticação inválidos');
-            }
-        }else{
-            echo "validacao bad";
-            foreach($validation->errors() as $error){
-                echo $error, "<br>";
-            }
-        }
-   // }
-}
+    if(!$user->isLoggedIn()) {
+
+        Redirect::to('login.php');
+    }
+    ob_start();
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br"> <![endif]-->
@@ -93,7 +73,7 @@ if(Input::exists()){
                         <li><a href="#">Link</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" data-toggle="modal" data-target="#login-overlay">Entrar</a></li>
+                        <li><a href="logout.php">Sair</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
@@ -106,37 +86,13 @@ if(Input::exists()){
     	<div class="container">
         	<div class="row">
             	<div class="col-sm-10 col-sm-offset-1">
-                	<h2>"Nos trabalhamos com o marketing pessoal a anos. Ja temos muita experiência nesse mercado"
-                    <br><small>Silvio Souza</small></h2>
+                	<!-- <h2>"Nos trabalhamos com o marketing pessoal a anos. Ja temos muita experiência nesse mercado"
+                                        <br><small>Silvio Souza</small></h2> -->
                 </div>
             </div>
         </div>
     </section>
     
-    
-    <!--INSVESTORS-->
-    <section class="servkces section-padding">
-    	<div class="container">
-        	<div class="row">
-            	<div class="col-sm-10 col-sm-offset-1">
-                	<div class="heading">
-                    	<h2>Nossos parceiros</h2>
-                    </div>
-                </div>
-                <div class="investors-logo col-md-4 col-xs-6">
-                	<img class="img-responsive" src="images/logomais.png" alt="investors-logo"/>
-                </div>
-                
-                <div class="investors-logo col-md-4 col-xs-6">
-                	<img class="img-responsive" src="images/LOGO_mare_mais.png" alt="investors-logo"/>
-                </div>
-
-                <div class="investors-logo col-md-4 col-xs-6">
-                	<img class="img-responsive" src="images/logooffzone.png" alt="investors-logo"/>
-                </div>
-            </div>
-        </div>
-    </section>
     
     <!-- FOOTER -->
     <footer class="footer">
