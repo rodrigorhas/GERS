@@ -21,10 +21,12 @@ class Session {
 	public static function flash($name, $string = ''){
 		if(self::exists($name)){
 			$session = self::get($name);
+			echo "Session existe: " . $session;
 			self::delete($name);
 			return $session;
 		}else{
 			self::put($name, $string);
+			echo "Session nao existe: " . $name;
 		}
 		return '';
 	}

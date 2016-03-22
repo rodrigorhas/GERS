@@ -1,36 +1,28 @@
 <?php
 require_once('core/init.php');
-
+$login_flag = 0;
 if(Input::exists()){
-    echo "Input";
     //if(Token::check(Input::get('token'))){
-        echo "Token";
         $validate = new Validate();
         $validation = $validate->check($_POST, array(
-            'username' => array('required' => true),
-            'password' => array('required' => true)
+            'username' => array('required' => true, 'alias' => "E-mail"),
+            'password' => array('required' => true, 'alias' => "Senha")
         ));
 
         if($validation->passed()){
-            echo "validacao passed";
             $user = new User();
 
             $remember = (Input::get('remember') === 'on') ? true : false;
             $login = $user->login(Input::get('username'), Input::get('password'), $remember);
 
             if($login){
-                Redirect::to('index.php?logado');
+                Redirect::to('index.php');
             }else{
-                echo "erro login";
-                //Session::flash('login', 'Dados de autenticação inválidos');
-            }
-        }else{
-            echo "validacao bad";
-            foreach($validation->errors() as $error){
-                echo $error, "<br>";
+                //Session::flash('login', 'Dados de autenticacao invalidos');
+                $login_flag = 1 ;
             }
         }
-   // }
+    //}
 }
 ?>
 <!DOCTYPE html>
@@ -92,47 +84,49 @@ if(Input::exists()){
                         <li class="active"><a href="#">Link</a></li>
                         <li><a href="#">Link</a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" data-toggle="modal" data-target="#login-overlay">Entrar</a></li>
-                    </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
         </nav>
     </section>
      
-     
-    <!-- ABOUT -->
-    <section class="about">
-    	<div class="container">
-        	<div class="row">
-            	<div class="col-sm-10 col-sm-offset-1">
-                	<h2>"Nos trabalhamos com o marketing pessoal a anos. Ja temos muita experiência nesse mercado"
-                    <br><small>Silvio Souza</small></h2>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <!--INSVESTORS-->
     <section class="servkces section-padding">
-    	<div class="container">
-        	<div class="row">
-            	<div class="col-sm-10 col-sm-offset-1">
-                	<div class="heading">
-                    	<h2>Nossos parceiros</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <form id="loginForm" method="POST" action="" novalidate="novalidate">
+                              <div class="form-group">
+                                  <label for="username" class="control-label">E-mail</label>
+                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Digite seu e-mail" placeholder="example@gmail.com">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div class="form-group">
+                                  <label for="password" class="control-label">Senha</label>
+                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Digite sua senha">
+                                  <span class="help-block"></span>
+                              </div>
+                              <div id="loginErrorMsg" class="alert alert-danger"><?php 
+                                if($login_flag){
+                                    echo "Dados de login incorretos";
+                                }
+                                foreach($validation->errors() as $error){
+                                    echo $error, "<br>";
+                                }
+                                ?></div>
+                              
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="remember" id="remember"> Mantenha-me conectado
+                                  </label>
+                                  <p class="help-block">(Se esse for um computador pessoal)</p>
+                              </div>
+                              <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
+                              <button type="submit" class="btn btn-success btn-md">Entrar</button>
+                              <a href="/forgot/" class="">Não estou conseguindo entrar!</a>
+                          </form>
+                        </div>
                     </div>
-                </div>
-                <div class="investors-logo col-md-4 col-xs-6">
-                	<img class="img-responsive" src="images/logomais.png" alt="investors-logo"/>
-                </div>
-                
-                <div class="investors-logo col-md-4 col-xs-6">
-                	<img class="img-responsive" src="images/LOGO_mare_mais.png" alt="investors-logo"/>
-                </div>
-
-                <div class="investors-logo col-md-4 col-xs-6">
-                	<img class="img-responsive" src="images/logooffzone.png" alt="investors-logo"/>
                 </div>
             </div>
         </div>

@@ -14,12 +14,16 @@
 		'mysql' => array(
 			'host' => '127.0.0.1',
 			'username' => 'root',
-			'password' => '923885',
-			'db' => 'gers'
+			'password' => '',
+			'db' => 'gers_area'
 		),
-		'visitor' => array(
-			'cookie_name' => 'visitor',
+		'remember' => array(
+			'cookie_name' => 'hash',
 			'cookie_expiry' => 604800
+		),
+		'session' => array(
+			'session_name' => 'user',
+			'token_name' => 'token'
 		)
 	);
 
@@ -30,9 +34,9 @@
 	require_once ROOT.'/functions/sanitize.php';
 	require_once ROOT.'/functions/browser.php';
 
-	if(Cookie::exists(Config::get('visitor/cookie_name'))) {
-		$hash = Cookie::get(Config::get('visitor/cookie_name'));
+	if(Cookie::exists(Config::get('remember/cookie_name'))) {
+		$hash = Cookie::get(Config::get('remember/cookie_name'));
 	}else{
 		$hash = md5(uniqid());
-		Cookie::put(Config::get('visitor/cookie_name'), $hash, Config::get('visitor/cookie_expiry'));
+		Cookie::put(Config::get('remember/cookie_name'), $hash, Config::get('remember/cookie_expiry'));
 	}
