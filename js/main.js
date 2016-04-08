@@ -4,25 +4,12 @@ $(document).ready(function() {
 	
 	
 	 //PRELOADER
-
-	 $("#preloader").hide();
+	 $("#preloader").fadeOut();
 
 	 $(window).load(function() {    
 	 	$("#status").fadeOut();
         //$("#preloader").delay(1000).fadeOut("slow");
     });
-	 $("#customizer .options").click(function() {
-	 	$("#customizer").toggleClass('active');
-	 });
-
-	 $("#customizer #colors a").click(function() {
-	 	var colorClass = $(this).attr('id');
-	 	if (colorClass == 'yellow') {
-	 		$('.css-color').attr('href', '#');
-	 	}
-	 	$('.css-color').attr('href', 'css/colors/' + colorClass + '.css');
-
-	 });
 
 	//TEXT ANIMATION 
 	$('.tlt').textillate({
