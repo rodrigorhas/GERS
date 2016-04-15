@@ -1,157 +1,301 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-br"> <!--<![endif]-->
+<html lang="en">
 <head>
-	<!-- META CONTENT -->
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- TITLE NAME -->
-    <title>Faça Diferente</title>
-    
-    <!-- FAVICON  -->
-    <link rel="icon" href="images/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    
-    <!-- DEMO COLORS  -->
-    <link href="#" class="css-color" rel="stylesheet">
-    
-    <!-- CSS STYLESHEET -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8">
+	<title>Consultoria - Roberto Santiago</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="js/flexslider/flexslider.css">
+	<link rel="stylesheet" href="js/slippry/dist/slippry.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section id="home" class="image-bg">
-    	<div class="container">
-            <div class="intro">
-            	<div class="row">
-                	<div class="col-sm-12">
-                    	<div class="intro-content text-center clearfix">
-                        <div class="col-md-6 logo">
-                            <img src="images/logo_fd2.png" width="370px" alt="">
-                        </div>
-                            <div class="col-md-6 title">
-                                <h2>O que você deverá saber para <span>vender</span> melhor a sua imagem</h2>
-                                <h5 class="sub">Cadastre-se e receba nossos videos <span>gratuitamente</span></h5>
-                                <br>
-                                <form id="mc-form" class="validate form-group" id="mc-form" target="_blank" novalidate>
-                                    <div class="col-md-8 col-md-offset-2">
-                                        <input type="email" class="form-control" placeholder="E-mail" required name="EMAIL">
-                                    </div>
-                                    <div class="col-md-8 col-md-offset-2">
-                                        <select name="estado" class="form-control">
-                                            <option value="">Estado</option>
-                                            <option value="AC">Acre (AC)</option>
-                                            <option value="AL">Alagoas (AL)</option>
-                                            <option value="AP">Amapá (AP)</option>
-                                            <option value="AM">Amazonas (AM)</option>
-                                            <option value="BA">Bahia (BA)</option>
-                                            <option value="CE">Ceará (CE)</option>
-                                            <option value="DF">Distrito Federal (DF)</option>
-                                            <option value="ES">Espírito Santo (ES)</option>
-                                            <option value="GO">Goiás (GO)</option>
-                                            <option value="MA">Maranhão (MA)</option>
-                                            <option value="MT">Mato Grosso (MT)</option>
-                                            <option value="MS">Mato Grosso do Sul (MS)</option>
-                                            <option value="MG">Minas Gerais (MG)</option>
-                                            <option value="PA">Pará (PA) </option>
-                                            <option value="PB">Paraíba (PB)</option>
-                                            <option value="PR">Paraná (PR)</option>
-                                            <option value="PE">Pernambuco (PE)</option>
-                                            <option value="PI">Piauí (PI)</option>
-                                            <option value="RJ">Rio de Janeiro (RJ)</option>
-                                            <option value="RN">Rio Grande do Norte (RN)</option>
-                                            <option value="RS">Rio Grande do Sul (RS)</option>
-                                            <option value="RO">Rondônia (RO)</option>
-                                            <option value="RR">Roraima (RR)</option>
-                                            <option value="SC">Santa Catarina (SC)</option>
-                                            <option value="SP">São Paulo (SP)</option>
-                                            <option value="SE">Sergipe (SE)</option>
-                                            <option value="TO">Tocantins (TO)</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-8 col-md-offset-2">
-                                        <button type="submit" class="btn btn-block btn-default">Inscrever-se</button> 
-                                    </div>
-                                </form>
-                            </div>
-                            <!-- <p><strong>Deixe seu nome e seu email principal.</strong></p> -->
-                        </div>  
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-     
-    <!-- ABOUT -->
-    <section class="about">
+
+	<nav class="navbar navbar-default navbar-static-top">
         <div class="container">
-            <div class="row heading">
-                <div class="thumb col-md-2 col-md-offset-1 text-center">
-                    <img src="images/busto-silvio.png" alt="">
-                </div>
-                <div class="col-md-8 col-md-offset-1 text">
-                    <h2>Quem é <span> Silvio Santiago</span></h2>
-                    <p class="short-text text-justify">
-                        Presidente do Grupo Empresarial Roberto Santiago, proprietário de 03 (Três) empresas, Administrador, Especialista em Marketing, Diploma reconhecido nos Estados Unidos pela Silny & Associates, Inc., International Education Consultants como Bachelor of Business Administration, atua como consultor em grandes empresas.
-                    </p>
-                </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="http://rsantiago.com.br/wp-content/uploads/2015/06/logo.png" alt="" class="logo"></a>
             </div>
-        </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">início</a></li>
+                    <li><a href="#grupo">grupo</a></li>
+                    <li><a href="#consultores">consultores</a></li>
+                    <li><a href="#portifolio">Portifólio</a></li>
+                    <li><a href="#contato">contato</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+    <section id="news-demo">
+    	<article>
+    		<div class="text-content">
+    			<div class="block">
+	    			<h2 class="animated fadeInUp">Receba o certificado do evento que você participou</h2>
+					<a href="#" class="btn btn-md btn-default">cadastre-se</a>
+    			</div>
+    		</div>
+    		<div class="image-content"><div class="img" data-img="images/bringdevicenew.png"></div></div>
+    	</article>
+    	<article>
+    		<div class="text-content">
+    			<div class="block">
+	    			<h2>Soluções inteligentes</h2>
+					<h2 class="black">para o seu negócio</h2>
+    			</div>
+    		</div>
+    		<div class="image-content"><div class="img" data-img="images/Repins-Photography-Business.jpg"></div></div>
+    	</article>
     </section>
-    <section class="whatis">
-        <div class="container">
-            <div class="row heading">
-                <div class="col-md-8 col-md-offset-2 text">
-                    <div class="text-center">
-                        <img src="images/logo_fd_color.png" alt="">
-                    </div>
-                    <h2>O que é o Faça Diferente</span></h2>
-                    <p class="short-text">
-                    São vídeos que ensinam passo-a-passo de forma diferente como desenvolver e qualificar pessoas.
-                    Nossos são compostos por ferramentas que garantem o resultado.
-                    </p>
+
+	<section id="grupo">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="center-heading text-center">
+					<h2>Sobre o Grupo</h2>
+					
+					<div class="about">
+						<div class="col-md-3 box">
+							<div class="group">
+								<div class="top">
+									<span class="icon"><i class="fa fa-briefcase"></i></span>
+									<h4>O grupo - Consultoria</h4>
+								</div>
+								<p>Trabalhando há mais de uma década no desenvolvimento e crescimento das empresas Maranhenses em Consultoria Empresarial.</p>
+							</div>
+						</div>
+						<div class="col-md-3 box">
+							<div class="group">
+								<div class="top">
+									<span class="icon"><i class="fa fa-lightbulb-o"></i></span>
+									<h4>Soluções</h4>
+								</div>
+								<p>Para melhor atender aos nossos clientes, criamos duas frentes de trabalho. O atendimento interno e o externo.</p>
+							</div>
+						</div>
+						<div class="col-md-3 box">
+							<div class="group">
+								<div class="top">
+									<span class="icon"><i class="fa fa-building-o"></i></span>
+									<h4>Empresa</h4>
+								</div>
+								<p>O Grupo Empresarial Roberto Santiago atualmente conta com empresas em diversas áreas de atuação.</p>
+							</div>
+						</div>
+						<div class="col-md-3 box">
+							<div class="group">
+								<div class="top">
+									<span class="icon"><span class="fa fa-group"></span></span>
+									<h4>Consultores</h4>
+								</div>
+								<p>Conheça todos os consultores do grupo empresarial Roberto Santiago.</p>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="consultores">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="center-heading text-center">
+					<h2>Nossa equipe</h2>
+				</div>
+			
+				<div class="row participante">
+					<div class="thumb col-md-3 col-md-offset-1">
+	                    <img class="img-responsive" src="http://rsantiago.com.br/wp-content/uploads/2015/06/SILVIO963-477x486.jpg" alt="">
+	                </div>
+	                <div class="col-md-7 col-md-offset-1 text">
+	                    <div class="titulacao">
+	                    	<h3>Quem é <span>Silvio Souza</span></h3>
+							<h5>especialista em marketing, vendas e finanças cra/ma: 3736</h5>
+							<small>marketing, vendas, finanças</small>
+						</div>
+	                    <p class="descricao">Credenciado pela Silny & Associates, Inc., International Education Consultants em Bachelor of Business Administration, instituição de ensino superior nos Estados Unidos.</p>
+	                </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- FOOTER -->
-    <footer class="footer">
-    	<div class="container">
-        	<div class="row">
-            	<div class="col-sm-12">
-                    <a href="http://www.rsantiago.com.br">
-                    	<img class="" src="images/logo.png" alt="logo"/>
-                    </a>
-                    <p>&copy; Copyright 2016. Todos os direitos reservados.</p>
+
+                <div class="row participante">
+					<div class="thumb col-md-3 col-md-offset-1">
+	                    <img class="img-responsive" src="http://rsantiago.com.br/wp-content/uploads/2015/10/fabiofranco-477x486.jpg" alt="">
+	                </div>
+	                <div class="col-md-7 col-md-offset-1 text">
+	                    <div class="titulacao">
+	                    	<h3>Quem é <span>Fabio Franco</span></h3>
+							<h5>especialista em administração de serviços</h5>
+							<small>administração de empresas e serviços</small>
+						</div>
+						<p class="descricao">Quantas vezes ouvimos falar de ideias simples que se tornaram grandes negócios, bem como de ideias espetaculares que fracassaram? Existe uma lacuna entre a ideia e sua concretização...</p>
+	                </div>
                 </div>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- PRELOADER -->
-    <div id="preloader">
-        <div id="status"></div>
-    </div>
-    
-        <!-- JS SCRIPTS FILE -->
-	<script src="js/jquery-1.12.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.form.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/main.js"></script>
+
+                <div class="row participante">
+					<div class="thumb col-md-3 col-md-offset-1">
+	                    <img class="img-responsive" src="http://rsantiago.com.br/wp-content/uploads/2015/06/ricardo-477x486.jpg" alt="">
+	                </div>
+	                <div class="col-md-7 col-md-offset-1 text">
+	                    <div class="titulacao">
+                    		<h3>Quem é <span>Ricardo Seidel</span></h3>
+							<h5>Pedagogo, ex-professor da Universidade Estadual do Maranhão</h5>
+							<small>professor</small>
+						</div>
+						<p class="descricao">Os estudos comprovam que atualmente a Gestão de Pessoas ou Administração de Recursos Humanos é um conjunto de políticas e práticas necessárias...</p>
+	                </div>
+                </div>
+
+                <div class="row participante">
+					<div class="thumb col-md-3 col-md-offset-1">
+	                    <img class="img-responsive" src="http://rsantiago.com.br/wp-content/uploads/2015/06/img-gissele-477x477.jpg" alt="">
+	                </div>
+	                <div class="col-md-7 col-md-offset-1 text">
+	                    <div class="titulacao">
+                    		<h3>Quem é <span>Gissele Lopes</span></h3>
+							<h5>especialista em logística e produção</h5>
+							<small>logística e produção</small>
+						</div>
+						<p class="descricao">A logística empresarial, como função integrada de uma empresa, é um conceito relativamente novo, apesar de que todas as empresas sempre desenvolveram atividades de suprimento, transporte, estocagem e distribuição de produtos.</p>
+	                </div>
+                </div>
+
+                <div class="row participante">
+					<div class="thumb col-md-3 col-md-offset-1">
+	                    <img class="img-responsive" src="http://rsantiago.com.br/wp-content/uploads/2015/06/daniel-antoniolii-477x486.jpg" alt="">
+	                </div>
+	                <div class="col-md-7 col-md-offset-1 text">
+	                    <div class="titulacao">
+                    		<h3>Quem é <span>Daniel antonioli</span></h3>
+							<h5>especialista em língua inglesa. cote/celta</h5>
+							<small>língua inglesa. cote/celta</small>
+						</div>
+						<p class="descricao">(University of Cambridge Local Examinations Syndicate) SIT (World Learning SIT Graduate Institute) MEMBRO DO BRAZ-TESOL PROFESSOR RECONHECIDO PELA EMBAIXADA DOS ESTADOS UNIDOS EM BRASÍLIA...</p>
+	                </div>
+                </div>
+
+                <div class="row participante">
+					<div class="thumb col-md-3 col-md-offset-1">
+	                    <img class="img-responsive" src="http://rsantiago.com.br/wp-content/uploads/2015/10/rafael3-477x486.jpg" alt="">
+	                </div>
+	                <div class="col-md-7 col-md-offset-1 text">
+	                	<div class="titulacao">
+                    		<h3>Quem é <span>Rafael Coelho</span></h3>
+							<h5>especialista em inovação e otimização de processos</h5>
+							<small>inovação e otimização de processos</small>
+						</div>
+						<p class="descricao">Engenheiro de Produção com vasta experiência na aplicação do Lean Manufacturing (Toyota Way) em indústrias de diversos segmentos, como Têxtil, Bebidas, Gases e Naval. CEO da startup Offzone...</p>
+	                </div>
+                </div>
+			</div>
+		</div>
+	</section>
+	
+	<section>
+		<div class="row" id="portifolio">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="row">
+					<div class="center-heading text-center">
+						<h2>Portifólio</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="gallery">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<img src="http://rsantiago.com.br/wp-content/uploads/2015/06/fachadamodelo1-445x268.jpg" />
+								</li>
+								<li>
+									<img src="http://rsantiago.com.br/wp-content/uploads/2015/06/10-445x268.jpg" />
+								</li>
+								<li>
+									<img src="http://rsantiago.com.br/wp-content/uploads/2015/06/2-445x268.jpg" />
+								</li>
+								<li>
+									<img src="http://rsantiago.com.br/wp-content/uploads/2015/06/3-445x268.jpg" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="text-center padding-block">
+						<button class="btn btn-md">Ver Mais</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="localizacao">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="center-heading text-center">
+					<h2>Localização</h2>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-8 col-md-offset-2">
+				<div class="row">
+					<br>
+					<div class="col-sm-12 col-md-8"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.011828507544!2d-44.24432868572256!3d-2.502983898176109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f69205c1236ce3%3A0x784cfa1d3aca407!2sGrupo+Empresarial+Roberto+Santiago!5e0!3m2!1spt-BR!2sbr!4v1460403837216" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+					<div class="col-md-4">
+						<h3>Informações</h3>
+						<p>Rua: 01, Quadra: 03, Casa: 08 - Cohajap</p>
+						<p>Cep: 65072-140.</p>
+						<p>São Luís – Maranhão – Brasil.</p>
+						<p>Fixo Oi: +55 (98) 3233-0495</p>
+						<p>Fixo Net: 55.98.33040495</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="row" id="contato">
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="center-heading text-center">
+					<h2>contato</h2>
+				</div>
+				
+				<div class="row">
+					<form class="contact">
+						<div class="col-md-12">
+							<input class="form-control col-md-6" type="text" placeholder="Nome">
+						</div>
+						<div class="col-md-6">
+							<input class="form-control" type="text" placeholder="Email">
+						</div>
+						<div class="col-md-6">
+							<input class="form-control" type="text" placeholder="Assunto">
+						</div>
+						<div class="col-md-12">
+							<textarea class="form-control" type="text" rows="6" placeholder="Escreva aqui..."></textarea>
+						</div>
+						<div class="col-md-12"><button class="btn btn-link pull-right">Enviar</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery-2.2.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/flexslider/jquery.flexslider-min.js"></script>
+	<script src="js/slippry/dist/slippry.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
