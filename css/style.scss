@@ -50,6 +50,15 @@ body {
 
 section {
 	padding: 60px 24px;
+
+	&.no-padd {
+		padding: 0;
+	}
+
+	&.no-padd-y {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 }
 
 .center-heading {
@@ -180,6 +189,11 @@ section {
 	border: 0;
 	font-size: 95%;
 	font-weight: 400;
+}
+
+.btn-md-default {
+	color: #333;
+	background-color: rgba(221, 221, 221, 1);
 }
 
 .padding-block {

@@ -41,6 +41,11 @@ body {
 
 section {
   padding: 60px 24px; }
+  section.no-padd {
+    padding: 0; }
+  section.no-padd-y {
+    padding-top: 0;
+    padding-bottom: 0; }
 
 .center-heading h2 {
   font-size: 23px;
@@ -132,6 +137,10 @@ section {
   border: 0;
   font-size: 95%;
   font-weight: 400; }
+
+.btn-md-default {
+  color: #333;
+  background-color: #dddddd; }
 
 .padding-block {
   padding: 25px 25px 0 25px; }
