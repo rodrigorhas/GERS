@@ -36,6 +36,8 @@ body {
   letter-spacing: 1px;
   padding-top: 32px;
   padding-bottom: 32px; }
+  .navbar-default .navbar-nav > li > a.active {
+    color: #FFCB21; }
 
 section {
   padding: 60px 24px; }

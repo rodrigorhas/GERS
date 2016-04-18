@@ -42,6 +42,10 @@ body {
 	letter-spacing: 1px;
 	padding-top: 32px;
     padding-bottom: 32px;
+
+    &.active {
+    	color: #FFCB21;
+    }
 }
 
 section {
