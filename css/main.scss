@@ -454,10 +454,6 @@ a:hover {
   border-bottom: 6px solid #daac46;
 }
 
-body {
-  background-color: #000;
-}
-
 .title {
   h2 {
     font-weight: 500;
@@ -471,6 +467,24 @@ body {
     padding: 12px 0;
     span {
       color: #f1c40f;
+    }
+  }
+}
+
+.navbar {
+  margin-bottom: 0;
+
+  .navbar-brand {
+    padding: 0;
+    float: none;
+    height: auto;
+  }
+
+  .navbar-nav {
+    padding: 30px;
+
+    & > li > a {
+      font-size: 16px;
     }
   }
 }
