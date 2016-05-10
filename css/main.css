@@ -354,6 +354,11 @@ a:hover {
     .navbar .navbar-nav > li > a {
       font-size: 16px; }
 
+section.section-padding {
+  padding: 80px 0; }
+section.gray {
+  background-color: #f5f5f5; }
+
 #home .intro {
   padding: 125px 0 0; }
   #home .intro .intro-content {
@@ -362,5 +367,12 @@ a:hover {
       font-size: 13px; }
     #home .intro .intro-content #mc-form .input-group input {
       margin-bottom: 0; }
+
+.postagens .post {
+  margin-bottom: 36px; }
+  .postagens .post h4 {
+    margin-bottom: 16px; }
+    .postagens .post h4 small {
+      display: block; }
 
 /*# sourceMappingURL=main.css.map */
