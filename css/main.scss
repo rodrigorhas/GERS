@@ -270,103 +270,6 @@ a:hover {
   .services .padding60 {
     padding-bottom: 60px; } }
 
-/*==============================================
-			      	INVESTORS
-================================================*/
-.investors {
-  background-image: url(../images/Investors-bg.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .investors .heading h2 {
-    color: #fff; }
-  .investors .investors-logo img:hover, .investors .investors-logo img:focus {
-    opacity: 0.8; }
-
-@media only screen and (max-width: 768px) {
-  .investors-logo img {
-    display: block;
-    margin: 0 auto;
-    width: 250px; } }
-
-/*==============================================
-			      	CONTACT
-================================================*/
-#contact-form > div[class*="for-user-"] > i,
-#mc-form i.fa-envelope-square {
-  position: absolute;
-  left: 25px;
-  top: 21px;
-  z-index: 2; }
-
-.contact-us {
-  background: url(../images/02.jpg) center bottom no-repeat; }
-
-.contact-form .form-control {
-  border-color: #ddd;
-  margin-bottom: 20px;
-  box-shadow: none;
-  padding: 5px 10px 5px 25px; }
-
-.contact-form label.error {
-  margin-bottom: 10px;
-  font-weight: 300;
-  color: #f1c40f; }
-
-#contact-form div[class*="for-user-"] {
-  position: relative; }
-
-.success-cf,
-.error-cf {
-  display: none; }
-
-.contact-form .success-cf p,
-.contact-form .error-cf p {
-  position: absolute;
-  display: block;
-  top: 20%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 10;
-  width: 80%;
-  margin: 0 auto !important;
-  padding: 20px 25px;
-  margin-bottom: 0;
-  border-radius: 4px; }
-
-.success-cf p {
-  background: #dff0d8;
-  color: #3c763d;
-  border: 1px solid rgba(60, 118, 61, 0.18); }
-
-.error-cf p {
-  background: #FFE5E5;
-  color: #ea5050;
-  border: 1px solid rgba(169, 82, 82, 0.18); }
-
-.contact-form label.error i,
-.success-cf i,
-.error-cf i {
-  padding-right: 5px; }
-
-.contact-form .form-control.error {
-  border-color: #E7BEBE;
-  color: #D95C5C;
-  border-left: none;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  box-shadow: 5px 0 0 0 #f1c40f inset;
-  margin-bottom: 5px; }
-
-.contact-form .form-control.error:focus {
-  border-color: #ff5050;
-  color: #ff5050;
-  box-shadow: 5px 0 0 0 #FF5050 inset; }
-
-.contact-form .valid {
-  border-color: #2ecc71; }
 
 /*==============================================
 			      	FOOTER
@@ -485,6 +388,27 @@ a:hover {
 
     & > li > a {
       font-size: 16px;
+    }
+  }
+}
+
+#home {
+  .intro {
+    padding: 125px 0 0;
+    .intro-content {
+      margin-bottom: 0;
+
+      #mc-form {
+        .input-group {
+          span button {
+            font-size: 13px;
+          }
+
+          input {
+            margin-bottom: 0;
+          }
+        }
+      }
     }
   }
 }
