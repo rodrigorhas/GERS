@@ -37,7 +37,7 @@ h5 {
   font-size: 18px; }
 
 .btn {
-  background-color: #f1c40f;
+  background-color: #D80000;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -105,7 +105,7 @@ a:hover {
   font-weight: 300; }
 
 .heading h2 span {
-  color: #333;
+  color: #D80000;
   font-weight: 600; }
 
 /*==============================================
@@ -115,7 +115,8 @@ a:hover {
   position: relative; }
 
 .image-bg {
-  background-image: url("../images/pattern.png");
+  /*background-image: url("../images/pattern.png");*/
+  background-color: #ffffff;
   background-position: center;
   background-size: cover; }
 
@@ -130,8 +131,7 @@ a:hover {
 			      INRO CONTENT
 ================================================*/
 .intro {
-  padding: 125px 0;
-  color: white; }
+  padding: 125px 0; }
 
 .intro p.intro-texts {
   color: rgba(255, 255, 255, 0.8);
@@ -196,11 +196,10 @@ a:hover {
 ================================================*/
 .about {
   position: relative;
-  background: #f1c40f;
+  background: #EEE;
   padding: 80px 0; }
   .about h2 {
     text-align: center;
-    color: #fff;
     font-size: 40px;
     font-weight: 600; }
     .about h2 small {
@@ -337,11 +336,11 @@ a:hover {
 .title h2 {
   font-weight: 500; }
   .title h2 span {
-    color: #f1c40f; }
+    color: #D80000; }
 .title .sub {
   padding: 12px 0; }
   .title .sub span {
-    color: #f1c40f; }
+    color: #D80000; }
 
 .navbar {
   margin-bottom: 0; }
@@ -353,7 +352,7 @@ a:hover {
     padding: 14px; }
     .navbar .navbar-nav > li > a {
       font-size: 16px;
-      color: #fff; }
+      color: #D80000; }
 
 .navbar-default {
   background-color: transparent;
